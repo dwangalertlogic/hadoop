@@ -21,4 +21,36 @@
         <name>mapreduce.framework.name</name>
         <value>yarn</value>
     </property>
+    <property>
+        <name>mapreduce.task.timeout</name>
+        <value>0</value>
+        <description>The number of milliseconds before a task will be terminated if it neither reads an input, writes an output, nor updates its status string.  A value of 0 disables the timeout.
+        </description>
+    </property>
+    <property>
+      <name>mapreduce.map.output.compress</name>
+      <value>true</value>
+      <description>Should the outputs of the maps be compressed before being
+                   sent across the network. Uses SequenceFile compression.
+      </description>
+    </property>
+    <property>
+      <name>mapreduce.output.fileoutputformat.compress</name>
+      <value>true</value>
+      <description>Should the job outputs be compressed?
+      </description>
+    </property>
+    <property>
+      <name>mapreduce.output.fileoutputformat.compress.type</name>
+      <value>RECORD</value>
+      <description>If the job outputs are to compressed as SequenceFiles, how should
+                   they be compressed? Should be one of NONE, RECORD or BLOCK.
+      </description>
+    </property>
+    <property>
+      <name>mapreduce.output.fileoutputformat.compress.codec</name>
+      <value>org.apache.hadoop.io.compress.SnappyCodec</value>
+      <description>If the job outputs are compressed, how should they be compressed?
+      </description>
+    </property>
 </configuration>
