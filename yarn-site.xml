@@ -22,4 +22,12 @@
         <name>yarn.resourcemanager.hostname</name>
         <value>sn1</value>
     </property>
+    <property>
+        <name>yarn.nodemanager.resource.memory-mb</name>
+        <value>32768</value>
+    </property>
+    <property>
+        <name>yarn.nodemanager.resource.cpu-vcores</name>
+        <value>16</value>
+    </property>
 </configuration>

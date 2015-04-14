@@ -22,6 +22,11 @@
         <value>hdfs://sn1:8020</value>
     </property>
 
+    <property>
+        <name>file.replication</name>
+        <value>2</value>
+    </property>
+
   <property>
     <name>io.compression.codecs</name>
     <value>
